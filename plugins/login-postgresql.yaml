@@ -1,0 +1,26 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: login-postgresql
+spec:
+  homepage: https://github.com/tomasliumparas/k8s-plugins-test
+  shortDescription: Open root shell to PostgreSQL instance
+  version: v0.1.0
+  description: |
+    Open root shell to PostgreSQL instance
+  caveats: |
+    Open root shell to PostgreSQL instance
+  platforms:
+    - selector:
+        matchExpressions:
+          - key: os
+            operator: In
+            values:
+              - darwin
+              - linux
+      uri: https://github.com/tomasliumparas/k8s-plugins-test/master/archive/kubectl-login-postgresql/kubectl-login_postgresql_v0.1.0.zip
+      sha256: 096cd1c2b18ccb4030ff86c37cc1f285c16c2d81
+      bin: kubectl-login_postgresql
+      files:
+        - from: *
+          to: .
