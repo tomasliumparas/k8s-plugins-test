@@ -18,6 +18,6 @@ spec:
             values:
               - darwin
               - linux
-      uri: https://github.com/tomasliumparas/k8s-plugins-test/master/archive/kubectl-login_postgresql_v0.1.0.zip
+      uri: https://github.com/tomasliumparas/k8s-plugins-test/blob/main/archive/kubectl-login_postgresql_v0.1.0.zip?raw=true
       sha256: e288fadf194410be65bc2e9201602b091aa6d93724f0fbc2329c92e4fc6de1d0
       bin: kubectl-login_postgresql
